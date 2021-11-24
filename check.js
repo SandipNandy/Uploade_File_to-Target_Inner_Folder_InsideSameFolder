@@ -1,5 +1,5 @@
 const fs = require('fs')
-const dir = 'C:/Users/SandipNandi/Music/Input'
+const dir = 'C:/Music/Input'
 var h = [], zipName, ZipNamePrefix = [], zipFileName = [];
 var files = fs.readdirSync(dir)
 var stringfile = files.toString();
@@ -44,7 +44,7 @@ for (let Folder = 0; Folder < h.length; Folder++) {
                 });
             };
 
-            moveFile('C:/Users/SandipNandi/Music/Input/'+ zipFileName[ZipFile] +'', 'C:/Users/SandipNandi/Music/Input/'+ words[myvalue] +'');
+            moveFile('C:/Music/Input/'+ zipFileName[ZipFile] +'', 'C:/Music/Input/'+ words[myvalue] +'');
 
 
         }
